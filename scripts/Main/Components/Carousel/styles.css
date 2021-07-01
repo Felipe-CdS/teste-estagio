@@ -1,0 +1,216 @@
+#carousel {
+    width: 100vw;
+    height: 30rem;
+    margin-bottom: 11rem;
+}
+
+#carousel #carousel-img{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+
+#carousel #bg-img{
+    width: 100%;
+    height: 29.3rem;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
+    border-radius: 0% 0% 65% 55%;
+
+    position: absolute;
+    z-index: 8;
+}
+
+#carousel #bg-gradient{
+    width: 100%;
+    height: 29.3rem;
+
+    opacity: 0.1;
+    background-image:  linear-gradient(#333333 0.6000000000000001px, transparent 0.6000000000000001px), linear-gradient(to right, #333333 0.6000000000000001px, rgb(229, 229, 247, 0.5) 0.6000000000000001px);
+    background-size: 12px 12px;
+
+    border-radius: 0% 0% 65% 55%;
+    position: absolute;
+    z-index: 9;
+}
+
+#carousel #bg-curve{
+    width: 100%;
+    height: 30rem;
+    background-color: var(--blue-dark);
+
+    border-radius: 0% 0% 90% 95%;
+
+    box-shadow: 2px 2px 50px rgb(0, 0, 0, 0.5);
+
+    position: absolute;
+    z-index: 7;
+}
+
+#carousel #carousel-text-div{
+    width: 30%;
+    height: 16rem;
+
+    background-color: rgb(0, 0, 0, 0.45);
+
+    position: absolute;
+    bottom: -26rem;
+    left: 20%;
+    z-index: 9;
+    border-radius: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem 3rem;
+}
+
+#carousel #carousel-text-div h1{
+    color: white;
+    font-family: 'folio-lt';
+    text-shadow: 3px 3px 1px rgb(0, 0, 0);
+    font-size: 28px;
+    margin-bottom: 2rem;
+}
+
+#carousel #carousel-text-div h1 span{
+    color: var(--blue-light);
+}
+
+#carousel #carousel-text-div hr{
+    width: 100%;
+    height: 1px;
+    background-color: var(--blue-light);
+    border: none;
+}
+
+#carousel #carousel-text-div button{
+    width: 70px;
+    height: 40px;
+    background-color: var(--blue-light);
+    box-shadow: 2px 2px 50px rgb(0, 0, 0, 0.5);
+    border-radius: 0rem 0rem 10rem 10rem;
+
+    margin-left: 77%;
+}
+
+#carousel #carousel-text-div button:hover{
+    background-color: var(--blue-dark);
+}
+
+
+#carousel #carousel-text-div button img{
+    transform: rotate(-90deg);
+}
+
+
+
+/************************/
+
+#carousel-buttons {
+    display: flex;
+
+    position: relative;
+    bottom: -27rem;
+    left: 16%;
+    align-items: center;
+}
+
+#carousel #carousel-buttons .carousel-button {
+    width: 20px;
+    height: 80px;
+
+    background-color: white;
+
+    border-radius: 0 0 100px 100px;
+
+    box-shadow: 1px 1px 5px black;
+
+    margin-right: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 5px 1px;
+
+    position: relative;
+
+    font-family: 'folio-lt';
+    color: white;
+    font-size: 14px;
+}
+
+#carousel .carousel-button:hover, .carousel-button.active {
+    position: relative;
+}
+
+#carousel-buttons #button-1 {
+    position: relative;
+    bottom: 4rem;
+}
+
+#carousel-buttons #button-1:hover, #carousel-buttons #button-1.active {
+    position: relative;
+    bottom: 2.5rem;
+    animation: button-1-animation 0.5s forwards;
+}
+
+@keyframes button-1-animation { 0% {bottom: 4rem;} 100% {bottom: 2rem; background-color: var(--blue-light);}}
+
+#carousel-buttons #button-2 {
+    position: relative;
+    bottom: 3.5rem;
+}
+
+#carousel-buttons #button-2:hover, #carousel-buttons #button-2.active {
+    position: relative;
+    bottom: 2rem;
+    animation: button-2-animation 0.5s forwards;
+}
+
+@keyframes button-2-animation { 0% {bottom: 3.5rem;} 100% {bottom: 2rem; background-color: var(--blue-light);}}
+
+#carousel-buttons #button-3 {
+    position: relative;
+    bottom: 3rem;
+}
+
+#carousel-buttons #button-3:hover, #carousel-buttons #button-3.active {
+    position: relative;
+    bottom: 1.5rem;
+    animation: button-3-animation 0.5s forwards;
+}
+
+@keyframes button-3-animation { 0% {bottom: 3rem;} 100% {bottom: 1.5rem; background-color: var(--blue-light);}}
+
+#carousel-buttons #button-4 {
+    position: relative;
+    bottom: 2.5rem;
+}
+
+#carousel-buttons #button-4:hover, #carousel-buttons #button-4.active {
+    position: relative;
+    bottom: 1rem;
+    animation: button-4-animation 0.5s forwards;
+}
+
+@keyframes button-4-animation { 0% {bottom: 2.5rem;} 100% {bottom: 1rem; background-color: var(--blue-light);}}
+
+#carousel-buttons #button-5 {
+    position: relative;
+    bottom: 2rem;
+}
+
+#carousel-buttons #button-5:hover,  #carousel-buttons #button-5.active {
+    position: relative;
+    bottom: 0.5rem;
+    animation: button-5-animation 0.3s forwards;
+}
+
+@keyframes button-5-animation {0% {bottom: 2rem;} 100% {bottom: 0.5rem; background-color: var(--blue-light);}}
