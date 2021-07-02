@@ -10,12 +10,14 @@ module.exports = {
   output: {
      filename: 'scripts/[name].bundle.js',
      path: path.resolve(__dirname, 'dist'),
+     publicPath: '/'
    }, 
 
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9000
+    port: 9000,
+    historyApiFallback: true,
   },
 
   module: {
@@ -64,7 +66,6 @@ module.exports = {
           },
         ],
       },
-     
     ],
   },
 }

@@ -17,7 +17,7 @@ function HeaderBar(){
                         <img src="./Assets/twitter.svg"/>
                     </a>
 
-                    <a href="#">
+                    <a href="/404">
                         <img src="./Assets/plus.svg"/>
                     </a>
                 </div>
@@ -39,16 +39,16 @@ function HeaderBar(){
                     <img id="logo-bg" src="./Assets/logo-bg.svg"/>
                 </div>
                 
-                <a href="#">Quem somos</a>
+                <a href="#/404">Quem somos</a>
                 <a id="hover-effect" >Soluções <br/> <img src="./Assets/arrow.svg"/></a>
                 <div id="hover-menu">
-                    <a href="#">Consultoria</a>
-                    <a href="#">Representação</a>
-                    <a href="#">Projetos especiais</a>
+                    <a href="#/404">Consultoria</a>
+                    <a href="#/404">Representação</a>
+                    <a href="#/404">Projetos especiais</a>
                 </div>
-                <a href="#">Clientes e Parceiros</a>
-                <a href="#">Notícias</a>
-                <a href="#">Contato</a>
+                <a href="#/404">Clientes e Parceiros</a>
+                <a href="#/404">Notícias</a>
+                <a href="#/404">Contato</a>
             </div>
         </div>
     )
